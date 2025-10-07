@@ -382,6 +382,143 @@ header {
     justify-content: center;
 }
 /* SKILLS */
+/* 
+.skills__container{
+    row-gap:0;
+}
+
+.skills__header{
+    display:flex;
+    align-items:center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills__icon, .skills__arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills__icon{
+    margin-right: var(--mb-0-75);
+}
+
+.skills__title{
+    font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+    font-size:var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills__arrow{
+    margin-left:auto;
+    transition: .4s;
+}
+
+.skills__list{
+    row-gap: 1.5rem;
+    padding-left:2.7rem;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__bar, .skills__percentage{
+    height: 5px;
+    border-radius: 0.25rem;
+}
+
+.skills__bar{
+    background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+    display:block;
+    background-color: var(--first-color);
+}
+
+.skills__html{
+    width:90%;
+} */
+
+/* SKILLS(MY EDITION) */
+.skills__container{
+    row-gap: 1rem;
+}
+
+.skills__content{
+    grid-template-columns: 1fr 2fr;
+}
+
+.skills__header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: #FFF;
+    background-color: var(--first-color-alt);
+    padding:0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.skills__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.skills__logos{
+    flex:1 1 100px;
+    max-width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:0.2rem;
+    animation: fadeIn 0.4s ease;
+}
+
+.skills__imgbox{
+    border-radius: 50%;
+    transition: transform .22s ease, box-shadow .22s ease; 
+    overflow: hidden;
+}
+
+.skills__imgbox img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    cursor:pointer;
+    padding:10px;
+}
+
+.skills__imgtext{
+    color:var(--text-color);
+    text-align: center;
+    font-size: var(--normal-font-size);
+}
+
+.skills__imgbox:hover{
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 30px var(--first-color);
+}
 
 /* QUALIFICATION (EDU & WORK EXP)*/
 
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
