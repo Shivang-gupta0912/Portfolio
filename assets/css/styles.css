@@ -639,6 +639,7 @@ header {
 .certifications__button{
     font-size: 1.25rem;
     font-weight: var(--font-medium);
+    color:var(--first-color-alt);
 }
 
 .certifications__content:hover{
