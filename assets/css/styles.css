@@ -623,6 +623,7 @@ header {
 
 .certifications__img{
     width:100%;
+    height:16rem;
     overflow: hidden;
 }
 
