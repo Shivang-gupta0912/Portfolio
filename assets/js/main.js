@@ -53,3 +53,17 @@ tabs.forEach(tab =>{
         tab.classList.add('qualification__active')
     })
 })
+
+// PORTFOLIO(PROJECTS) SWIPER
+let swiperProjects = new Swiper(".projects__container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+});
