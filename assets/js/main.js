@@ -117,7 +117,7 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-mo
 // we validate if the user previously chose a topic
 if(selectedTheme){
     // if the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-    document.body.classList[selecedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     themeButton.classList[selectedIcon === 'uil-moon'? 'add' : 'remove'](iconTheme)
 }
 
