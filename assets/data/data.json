@@ -1,0 +1,114 @@
+{
+    "name":"Shivang Gupta",
+
+    "title":"Software Developer",
+
+    "aboutMe_brief":"Passionate about Programming and Developing different Websites.",
+
+    "aboutMe_detail":"I’m Shivang — a developer fueled by curiosity and a passion for programming. I love exploring how things work under the hood, especially in areas like computer architecture and core CS concepts. Coding, for me, is about solving problems creatively and building efficient, scalable solutions that make an impact.",
+
+    "resume":"assets/resume/Shivang Gupta Resume.pdf",
+
+    "achievements":[
+        {
+            "title": "DSA Problem Solved",
+            "count": 500
+        },
+
+        {
+            "title": "Tech Events / Hackathons Participated",
+            "count":10
+        },
+
+        {
+            "title":"GitHub Repositories",
+            "count":5
+        }
+    ],
+
+    "skills":{
+        "technical_skills":[
+            ["C++", "assets/img/TechnicalSkills/c++.png"],
+            ["Python", "assets/img/TechnicalSkills/python.png"],
+            ["Django", "assets/img/TechnicalSkills/django.png"],
+            ["HTML", "assets/img/TechnicalSkills/html.png"],
+            ["CSS", "assets/img/TechnicalSkills/css.png"],
+            ["MySQL", "assets/img/TechnicalSkills/mysql.png"],
+            ["Git", "assets/img/TechnicalSkills/git.png"],
+            ["GitHub", "assets/img/TechnicalSkills/github.png"]
+        ],
+
+        "soft_skills":[
+            ["Problem Solver", "assets/img/SoftSkills/problemsolver.png"],
+            ["Public Speaking", "assets/img/SoftSkills/publicspeaking.png"],
+            ["Team Player", "assets/img/SoftSkills/teamplayer.png"],
+            ["Time Management", "assets/img/SoftSkills/timemanagement.png"]
+        ]
+    },
+
+    "education":{
+        "graduation":{
+            "degree":"Bachelor of Technology in Computer Science and Engineering",
+            "college":"G.L. Bajaj Institute Of Technology And Management",
+            "year":"2022-2026"
+        },
+
+        "senior_secondary":{
+            "class":"Senior Secondary (XII)",
+            "school":"Vidyawati Nigam Memorial Public School, Banda (U.P.)",
+            "year":"2020-2021"
+        },
+        
+        "secondary":{
+            "class":"Secondary (X)",
+            "school":"Vidyawati Nigam Memorial Public School, Banda (U.P.)",
+            "year":"2018-2019"
+        }
+    },
+
+    "work":"no work experience",
+
+    "certificates":[
+        {
+            "image_link":"assets/img/Certificates/Google Cloud Study Jams Program.png",
+            "issued_on":"2023",
+            "link":"https://drive.google.com/file/d/1roYnrJRjhPR2XdCPP3TiTh876KWMK_W9/view"
+        },
+
+        {
+            "image_link":"assets/img/Certificates/OOPs certificate Coding Ninjas.jpg",
+            "issued_on":"05/24",
+            "link":"https://drive.google.com/file/d/1RhmrMG8PCte7mdUpRfoVpbANcL150MqW/view?usp=drive_link"
+        },
+
+        {
+            "image_link":"assets/img/Certificates/Cloud Virtual Internship.png",
+            "issued_on":"11/23",
+            "link":"https://drive.google.com/file/d/1HRyeyqFUZvavcVnJHrh59y7q48HalGaJ/view"
+        },
+
+        {
+            "image_link":"assets/img/Certificates/SIH 2024.png",
+            "issued_on":"09/24",
+            "link":"https://drive.google.com/file/d/1GkKmBCMwF0TFuIYYyQUEcfE5082rgknp/view?usp=sharings"
+        },
+
+        {
+            "image_link":"assets/img/Certificates/SIH 2023.png",
+            "issued_on":"09/23",
+            "link":"https://drive.google.com/file/d/104qXqACVc5ukzo7Ov5u8e6bcgizI7R3F/view?usp=drive_link"
+        }
+    ],
+
+    "contact":{
+        "mob_no":"999-777-8888",
+        "email":"shivang.gupta0912@gmail.com",
+        "location":"Greater Noida"
+    },
+
+    "social_links":{
+        "linked_in":"https://www.linkedin.com/in/shivang-gupta-838420253/",
+        "gitHub":"https://github.com/Shivang-gupta0912",
+        "twitter":"https://x.com/Shivang_Gupta09"
+    }
+}
