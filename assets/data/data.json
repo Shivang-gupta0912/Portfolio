@@ -46,27 +46,31 @@
         ]
     },
 
-    "education":{
-        "graduation":{
-            "degree":"Bachelor of Technology in Computer Science and Engineering",
-            "college":"G.L. Bajaj Institute Of Technology And Management",
+    "education":[
+        {
+            "title":"Bachelor of Technology in Computer Science and Engineering",
+            "institute":"G.L. Bajaj Institute Of Technology And Management",
             "year":"2022-2026"
         },
 
-        "senior_secondary":{
-            "class":"Senior Secondary (XII)",
-            "school":"Vidyawati Nigam Memorial Public School, Banda (U.P.)",
+        {
+            "title":"Senior Secondary (XII)",
+            "institute":"Vidyawati Nigam Memorial Public School, Banda (U.P.)",
             "year":"2020-2021"
         },
         
-        "secondary":{
-            "class":"Secondary (X)",
-            "school":"Vidyawati Nigam Memorial Public School, Banda (U.P.)",
+        {
+            "title":"Secondary (X)",
+            "institute":"Vidyawati Nigam Memorial Public School, Banda (U.P.)",
             "year":"2018-2019"
         }
-    },
+    ],
 
-    "work":"no work experience",
+    "work":[
+        {
+            "title":"No Work Experience"
+        }
+    ],
 
     "certificates":[
         {

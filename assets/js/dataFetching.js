@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
         loadHome(data.social_links, data.name, data.title, data.aboutMe_brief);
         loadAbout(data.aboutMe_detail, data.achievements, data.resume);
         loadSkills(data.skills.technical_skills, data.skills.soft_skills);
+        loadQualification(data.education, data.work);
+        loadCertifications(data.certificates);
     })
     .catch(error => console.error("Error loading profile data:", error));
 })
@@ -90,5 +92,60 @@ function loadSkills(technicalSkills, softSkills){
         `;
 
         softGallery.innerHTML += skill;
+    });
+}
+
+function loadQualification(educationData, workData){
+    const qualificationEduInfo = document.querySelectorAll("#education .qualification__datainfo");
+
+    qualificationEduInfo.forEach((container, index) => {
+        const data = educationData[index];
+
+        if (!data) return;   // Skip if extra HTML blocks exist
+
+        const title = container.querySelector(".qualification__title");
+        const subtitle = container.querySelector(".qualification__subtitle");
+        const calendar = container.querySelector(".qualification__calendar");
+
+        title.textContent = data.title;
+        subtitle.textContent = data.institute;
+        calendar.innerHTML = `<i class="uil uil-calendar-alt"></i> ${data.year}`;
+    });
+
+    const qualificationWorkInfo = document.querySelectorAll("#work .qualification__datainfo");
+
+    qualificationWorkInfo.forEach((container, index) =>{
+        const data = workData[index];
+
+        if(!data) return ;
+
+        const title = container.querySelector(".qualification__title");
+        title.textContent = data.title;
+    });
+}
+
+function loadCertifications(certificates){
+    const certificationsContainer = document.querySelector(".certifications__container");
+    certificationsContainer.innerHTML = "";
+
+    certificates.forEach(item => {
+        const certificationsContent = `
+            <div class="certifications__content">
+                <div class="certifications__img">
+                    <img src="${item.image_link}" alt="">
+                </div>
+
+                <div class="certifications__data">
+                    <span>Issued on ${item.issued_on}</span>
+                    <a href="${item.link}" target="_blank"
+                        class="certifications__button">
+                        See Credentials
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>        
+        `;
+
+        certificationsContainer.innerHTML += certificationsContent;
     });
 }
