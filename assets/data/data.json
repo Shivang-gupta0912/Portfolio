@@ -104,11 +104,20 @@
         }
     ],
 
-    "contact":{
-        "mob_no":"999-777-8888",
-        "email":"shivang.gupta0912@gmail.com",
-        "location":"Greater Noida"
-    },
+    "contact":[
+        {
+            "contact_title":"Call Me",
+            "contact_subtitle":"+91 7985362516"
+        },
+        {
+            "contact_title":"Email",
+            "contact_subtitle":"shivang.gupta0912@gmail.com"
+        },
+        {
+            "contact_title": "Location",
+            "contact_subtitle":"Greater Noida"
+        }
+    ],
 
     "social_links":{
         "linked_in":"https://www.linkedin.com/in/shivang-gupta-838420253/",

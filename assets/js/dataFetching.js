@@ -11,12 +11,14 @@ document.addEventListener("DOMContentLoaded", ()=> {
         loadSkills(data.skills.technical_skills, data.skills.soft_skills);
         loadQualification(data.education, data.work);
         loadCertifications(data.certificates);
+        loadContact(data.contact);
+        loadfooter(data.social_links);
     })
     .catch(error => console.error("Error loading profile data:", error));
 })
 
 
-// Function TO LOAD DATA 
+// Functions TO LOAD DATA 
 function loadHome(socialLinks, name, title, description){
     const {linked_in, gitHub, twitter} = socialLinks;
 
@@ -147,5 +149,40 @@ function loadCertifications(certificates){
         `;
 
         certificationsContainer.innerHTML += certificationsContent;
+    });
+}
+
+function loadContact(contact){
+    const contactContainer = document.querySelector(".contact__container div");
+    contactContainer.innerHTML = "";
+
+    contact.forEach(item => {
+        const info = `
+            <div class="contact__information">
+                <i class="uil uil-phone contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">${item.contact_title}</h3>
+                    <span class="contact__subtitle">${item.contact_subtitle}</span>
+                </div>
+            </div>
+        `;
+
+        contactContainer.innerHTML += info;
+    });
+}
+
+function loadfooter(socialLinks){
+    const {linked_in, gitHub, twitter} = socialLinks;
+
+    const footerSocial = document.querySelectorAll(".footer__social");
+    footerSocial.forEach(icon => {
+        if(icon.querySelector(".uil-linkedin-alt")){
+            icon.href = linked_in;
+        }else if(icon.querySelector(".uil-github-alt")){
+            icon.href = gitHub;
+        }else if(icon.querySelector(".uil-twitter-alt")){
+            icon.href = twitter;
+        }
     });
 }
